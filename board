@@ -1,0 +1,29 @@
+//Variable setup
+let boardSize = 400;
+let sqCount = 8;
+let color1 = "white";
+let color2 = "black";
+
+
+function setup() {
+  createCanvas(boardSize, boardSize);
+}
+
+function draw() {
+  background("gray");
+  //variable below ensures correct square size with any sqCount value
+  let sqSize = boardSize / sqCount;
+  //grid setup
+  for (let row = 0; row <= sqCount; row++) {
+    for (let col = 0; col <= sqCount; col++) {
+    //if-else statement for alternating colors
+      if ((row + col) % 2 === 0) {
+        fill(color1);
+      } else {
+        fill(color2);
+      }
+      //creates the squares
+      square(col * sqSize, row * sqSize, sqSize);
+    }
+  }
+}
