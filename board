@@ -1,7 +1,7 @@
 //Variable setup
 let boardSize = 400;
 let sqCount = 8;
-let color1 = "white";
+let color1 = "tan";
 let color2 = "black";
 
 
