@@ -1,2 +1,2 @@
 # checkerboard
-checkerboard made with p5js
+fully customizable checkerboard function made with p5js
